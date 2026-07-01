@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Performance Media Buyer — Meta &amp; TikTok Ads</title>
+<title>Sadeeq - Performance Media Buyer & Creative Strategist</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#0a0e14;
-    --panel:#11161f;
-    --panel-2:#161c27;
-    --line:#222b38;
-    --mute:#76839a;
-    --text:#e8edf5;
-    --signal:#16f08a;       /* the "in the green" performance color */
-    --signal-dim:#0fa862;
-    --amber:#ffc24b;
-    --bg-grad:radial-gradient(1200px 600px at 78% -8%, rgba(22,240,138,.10), transparent 60%);
+    --ink:#f7f8f5;
+    --panel:#ffffff;
+    --panel-2:#f1f4ef;
+    --line:#dfe5dc;
+    --mute:#667085;
+    --text:#101828;
+    --signal:#07864b;
+    --signal-dim:#05603a;
+    --amber:#a15c07;
+    --bg-grad:radial-gradient(900px 460px at 82% -10%, rgba(7,134,75,.10), transparent 62%);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -40,6 +40,8 @@
   .brand{font-family:'Space Grotesk';font-weight:700;letter-spacing:-.02em;font-size:18px}
   .brand .dot{color:var(--signal)}
   .status{font-family:'JetBrains Mono';font-size:12px;color:var(--signal);display:flex;align-items:center;gap:8px}
+  .topmail{font-family:'Space Grotesk';font-weight:600;font-size:13px;color:var(--text);text-decoration:none;border:1px solid var(--line);padding:9px 13px;border-radius:9px}
+  .topmail:hover{border-color:var(--signal);color:var(--signal)}
   .pulse{width:8px;height:8px;border-radius:50%;background:var(--signal);box-shadow:0 0 0 0 rgba(22,240,138,.6);animation:pulse 2.4s infinite}
   @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(22,240,138,.55)}70%{box-shadow:0 0 0 9px rgba(22,240,138,0)}100%{box-shadow:0 0 0 0 rgba(22,240,138,0)}}
 
@@ -48,7 +50,7 @@
   .eyebrow{font-family:'JetBrains Mono';font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);margin-bottom:22px}
   .hero h1{font-family:'Space Grotesk';font-weight:700;font-size:clamp(34px,6vw,62px);line-height:1.02;letter-spacing:-.03em;max-width:14ch}
   .hero h1 em{font-style:normal;color:var(--signal)}
-  .sub{margin-top:24px;font-size:18px;color:#b7c2d4;max-width:54ch}
+  .sub{margin-top:24px;font-size:18px;color:#475467;max-width:54ch}
 
   /* the signature stat */
   .signature{margin-top:50px;display:flex;align-items:flex-end;gap:30px;flex-wrap:wrap}
@@ -57,7 +59,7 @@
   .cpl .val{font-family:'Space Grotesk';font-weight:700;font-size:clamp(64px,13vw,128px);line-height:.85;letter-spacing:-.04em;color:var(--signal)}
   .cpl .val small{font-size:.34em;color:var(--text);font-weight:600;letter-spacing:-.02em}
   .cpl .foot{font-family:'JetBrains Mono';font-size:12.5px;color:var(--mute);margin-top:14px}
-  .cpl .foot b{color:#cdd6e4;font-weight:700}
+  .cpl .foot b{color:#344054;font-weight:700}
 
   /* ---------- strip of headline numbers ---------- */
   .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:60px}
@@ -91,14 +93,46 @@
   .skill{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:22px}
   .skill h4{font-family:'Space Grotesk';font-weight:600;font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:9px}
   .skill h4::before{content:"";width:7px;height:7px;background:var(--signal);border-radius:2px;transform:rotate(45deg)}
-  .skill p{font-size:13.5px;color:#a9b4c6}
+  .skill p{font-size:13.5px;color:#475467}
 
   /* ---------- approach ---------- */
   .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
   .step{background:var(--panel);padding:24px 20px}
   .step .num{font-family:'JetBrains Mono';font-size:12px;color:var(--signal);margin-bottom:14px}
   .step h4{font-family:'Space Grotesk';font-weight:600;font-size:15px;margin-bottom:8px}
-  .step p{font-size:13px;color:#a3aec1}
+  .step p{font-size:13px;color:#475467}
+
+
+
+  /* ---------- creative strategy ---------- */
+  .creative-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .creative-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+  .creative-card img{width:100%;height:360px;object-fit:cover;display:block;border-bottom:1px solid var(--line);background:var(--panel-2)}
+  .creative-card .body{padding:18px}
+  .creative-card .tag{font-family:'JetBrains Mono';font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);margin-bottom:8px}
+  .creative-card h4{font-family:'Space Grotesk';font-weight:600;font-size:16px;letter-spacing:-.01em;margin-bottom:7px}
+  .creative-card p{font-size:13px;color:#475467}
+
+  .video-briefs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+  .video-brief{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .video-brief .tag{font-family:'JetBrains Mono';font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);margin-bottom:8px}
+  .video-brief h4{font-family:'Space Grotesk';font-weight:600;font-size:18px;letter-spacing:-.01em;margin-bottom:10px}
+  .video-brief p{font-size:13.5px;color:#475467;margin-bottom:12px}
+  .script{border-left:2px solid var(--signal);padding-left:13px;color:#344054;font-size:13px;line-height:1.55}
+
+  .video-showcase{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:16px}
+  .video-card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+  .video-card video{width:100%;height:390px;object-fit:cover;display:block;background:#f2f4f7;border-bottom:1px solid var(--line)}
+  .video-card .body{padding:18px}
+  .video-card .tag{font-family:'JetBrains Mono';font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);margin-bottom:8px}
+  .video-card h4{font-family:'Space Grotesk';font-weight:600;font-size:16px;letter-spacing:-.01em;margin-bottom:7px}
+  .video-card p{font-size:13px;color:#475467}
+
+  .strategy-box{margin-top:16px;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px 26px;display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:start}
+  .strategy-box h3{font-family:'Space Grotesk';font-size:20px;letter-spacing:-.02em;margin-bottom:10px}
+  .strategy-box p{color:#475467;font-size:14px}
+  .strategy-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .pill{border:1px solid var(--line);background:var(--panel-2);border-radius:999px;padding:10px 13px;font-size:12.5px;color:#344054;font-family:'JetBrains Mono'}
 
   /* ---------- cta ---------- */
   .cta{text-align:center;padding:90px 0 30px}
@@ -107,8 +141,8 @@
   .cta p{color:var(--mute);margin-top:18px;font-size:16px}
   .btns{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
   .btn{font-family:'Space Grotesk';font-weight:600;font-size:15px;padding:15px 28px;border-radius:11px;text-decoration:none;display:inline-flex;align-items:center;gap:9px;transition:.18s}
-  .btn-pri{background:var(--signal);color:#04130b}
-  .btn-pri:hover{background:#3bff9f;transform:translateY(-2px)}
+  .btn-pri{background:var(--signal);color:#ffffff}
+  .btn-pri:hover{background:#089b56;transform:translateY(-2px)}
   .btn-sec{background:transparent;color:var(--text);border:1px solid var(--line)}
   .btn-sec:hover{border-color:var(--signal);color:var(--signal)}
 
@@ -123,11 +157,18 @@
     .strip{grid-template-columns:repeat(2,1fr)}
     .flow{grid-template-columns:repeat(2,1fr)}
     .skills{grid-template-columns:1fr 1fr}
+    .creative-grid{grid-template-columns:1fr 1fr}
+    .strategy-box{grid-template-columns:1fr}
+    .video-briefs{grid-template-columns:1fr}
+    .video-showcase{grid-template-columns:1fr 1fr}
     .two{grid-template-columns:1fr}
     .sec-note{display:none}
   }
   @media(max-width:520px){
     .skills{grid-template-columns:1fr}
+    .creative-grid{grid-template-columns:1fr}
+    .video-showcase{grid-template-columns:1fr}
+    .strategy-list{grid-template-columns:1fr}
     .case-kpis{gap:20px}
   }
 </style>
@@ -136,29 +177,29 @@
 <div class="wrap">
 
   <div class="topbar">
-    <div class="brand">SADEEQ<span class="dot">·</span>SOCIAL</div>
-    <div class="status"><span class="pulse"></span>AVAILABLE FOR REMOTE WORK</div>
+    <div class="brand">SADEEQ</div>
+    <a class="topmail" href="mailto:adauda2021@gmail.com?subject=Media%20Buying%20Inquiry">Email me</a>
   </div>
 
   <!-- HERO -->
   <header class="hero">
-    <div class="eyebrow reveal">Performance Media Buyer — Meta &amp; TikTok</div>
-    <h1 class="grotesk reveal">I buy attention and turn it into <em>leads &amp; sales</em>.</h1>
-    <p class="sub reveal">Five years running paid social at scale across Meta and TikTok. I drive massive lead volume and keep acquisition costs lower than almost anyone in the room — every number below is pulled straight from live ad accounts.</p>
+    <div class="eyebrow reveal">Sadeeq · Performance Media Buyer + Creative Strategist</div>
+    <h1 class="grotesk reveal">Paid ads and creatives for brands that want <em>leads, sales, and scale</em>.</h1>
+    <p class="sub reveal">I build campaigns, research what is working, test hooks, track performance, and scale winners.</p>
 
     <div class="signature reveal">
       <div class="cpl">
-        <div class="label">Cost per landing-page view — TikTok</div>
-        <div class="val grotesk">$0.02<small> / view</small></div>
-        <div class="foot">Verified by TikTok as a <b>top 30% performer</b> &nbsp;·&nbsp; ₦29 (≈$0.02) cost per lead on Meta at <b>1.5M+ lead</b> scale</div>
+        <div class="label">Managed ad spend</div>
+        <div class="val grotesk">$30K+<small> / month</small></div>
+        <div class="foot">Managed up to <b>8 ad accounts</b> at a time. Proof available in interview or account walkthrough.</div>
       </div>
     </div>
 
     <div class="strip reveal">
-      <div class="cell"><div class="n grotesk">100s of M<span> ₦</span></div><div class="k">Ad spend managed</div></div>
-      <div class="cell"><div class="n grotesk">1.5<span>M</span>+</div><div class="k">Leads generated</div></div>
+      <div class="cell"><div class="n grotesk">1.5<span>M</span>+</div><div class="k">Leads - one account this year</div></div>
+      <div class="cell"><div class="n grotesk">8</div><div class="k">Ad accounts managed at once</div></div>
+      <div class="cell"><div class="n grotesk">$30<span>K</span>+</div><div class="k">Monthly ad spend</div></div>
       <div class="cell"><div class="n grotesk">17.2<span>M</span></div><div class="k">Paid views driven</div></div>
-      <div class="cell"><div class="n grotesk">$0.01<span></span></div><div class="k">Lowest cost / result</div></div>
     </div>
   </header>
 
@@ -166,57 +207,51 @@
   <section>
     <div class="sec-head">
       <span class="sec-idx mono">01</span>
-      <span class="sec-title grotesk">Proof, from the ad accounts</span>
-      <span class="sec-note">Unedited exports from Meta Ads Manager, Business Suite &amp; TikTok Ads.</span>
+      <span class="sec-title grotesk">Proof from ad accounts</span>
+      <span class="sec-note">Real dashboard screenshots. More proof available on interview.</span>
     </div>
 
-    <!-- Case 1: TikTok dollar proof -->
     <div class="case reveal">
       <div class="case-top">
         <div>
-          <div class="case-tag mono">Cost Efficiency · TikTok</div>
-          <h3 class="grotesk">Landing-page views at $0.01–$0.02 — ranked top 30% by TikTok</h3>
+          <div class="case-tag mono">Volume · One Ad Account</div>
+          <h3 class="grotesk">1.5M+ tracked leads from one account this year</h3>
         </div>
         <div class="case-kpis">
-          <div class="kpi"><div class="v grotesk">$0.02</div><div class="l">Cost / LP view</div></div>
-          <div class="kpi"><div class="v grotesk">Top 30%</div><div class="l">TikTok ranking</div></div>
-          <div class="kpi"><div class="v grotesk">2,001</div><div class="l">Button clicks</div></div>
+          <div class="kpi"><div class="v grotesk">1,500,513</div><div class="l">Tracked leads</div></div>
+          <div class="kpi"><div class="v grotesk">440K+</div><div class="l">7d-click / 1d-view</div></div>
+          <div class="kpi"><div class="v grotesk">One</div><div class="l">Ad account</div></div>
         </div>
       </div>
       <div class="shot">
-        <div class="two">
-          <img src="tt1.png" alt="TikTok promotion results: 9802 video views, $3.85 ad cost, $0.02 cost per landing page view">
-          <img src="tt2.jpg" alt="TikTok promotion ranked top 30% of performers, $37.54 ad cost, 2001 apply now clicks, $0.03 cost per landing page view">
-        </div>
-        <div class="cap mono">// TikTok Ads. Left: $0.02 per landing-page view. Right: TikTok itself flags the campaign as a top-30% performer.</div>
+        <img src="img6.png" alt="Ad results table showing 1.5M total leads from one ad account this year">
+        <div class="cap mono">// One ad account. This-year lead volume across attribution windows.</div>
       </div>
     </div>
 
-    <!-- Case 2: Meta lead gen -->
     <div class="case reveal">
       <div class="case-top">
         <div>
-          <div class="case-tag mono">Lead Generation · Meta</div>
-          <h3 class="grotesk">Driving leads at ₦29 each across a high-volume form campaign</h3>
+          <div class="case-tag mono">Lead Volume · Meta</div>
+          <h3 class="grotesk">639K+ intake leads in Meta Leads Center</h3>
         </div>
         <div class="case-kpis">
-          <div class="kpi"><div class="v grotesk">5.8K</div><div class="l">Leads (form)</div></div>
-          <div class="kpi"><div class="v grotesk">₦29.15</div><div class="l">Cost / lead</div></div>
-          <div class="kpi"><div class="v grotesk">166K</div><div class="l">Views</div></div>
+          <div class="kpi"><div class="v grotesk">639K+</div><div class="l">Intake leads</div></div>
+          <div class="kpi"><div class="v grotesk">Meta</div><div class="l">Leads Center</div></div>
+          <div class="kpi"><div class="v grotesk">Lead Gen</div><div class="l">Proof</div></div>
         </div>
       </div>
       <div class="shot">
-        <img src="img1.png" alt="Meta lead generation overview showing 5.8K leads at 29.15 naira cost per lead">
-        <div class="cap mono">// Meta Ads Manager — lead form campaign, 11–22 Jan. CPL held under ₦30 (≈$0.02) across the full flight.</div>
+        <img src="leads-overview-639k.png" alt="Meta Leads Center overview showing 639K intake leads">
+        <div class="cap mono">// Leads Center overview from a live account.</div>
       </div>
     </div>
 
-    <!-- Case 2 -->
     <div class="case reveal">
       <div class="case-top">
         <div>
           <div class="case-tag mono">Scale · Reach &amp; Clicks</div>
-          <h3 class="grotesk">Scaling paid reach to 17M views while clicks climbed 66%</h3>
+          <h3 class="grotesk">17.2M paid views and 772K+ link clicks</h3>
         </div>
         <div class="case-kpis">
           <div class="kpi"><div class="v grotesk">17.2M</div><div class="l">Views from ads</div></div>
@@ -229,35 +264,54 @@
           <img src="img15.jpg" alt="17.2M views breakdown with growth indicators">
           <img src="img2.png" alt="772.5K Facebook link clicks up 66.6%">
         </div>
-        <div class="cap mono">// Left: 17.2M total paid views (+15.3%), 5.7M unique viewers. Right: 772.5K link clicks trending up and to the right.</div>
+        <div class="cap mono">// Paid reach and click growth from live account dashboards.</div>
       </div>
     </div>
 
-    <!-- Case 3 -->
     <div class="case reveal">
       <div class="case-top">
         <div>
-          <div class="case-tag mono">Volume · Full Account</div>
-          <h3 class="grotesk">Driving 1.5M+ tracked leads across live campaigns</h3>
+          <div class="case-tag mono">Cost Control · Meta</div>
+          <h3 class="grotesk">Lead campaign with low USD-equivalent CPL</h3>
         </div>
         <div class="case-kpis">
-          <div class="kpi"><div class="v grotesk">1,500,513</div><div class="l">Total leads</div></div>
-          <div class="kpi"><div class="v grotesk">440K+</div><div class="l">7d-click / 1d-view</div></div>
-          <div class="kpi"><div class="v grotesk">Multi</div><div class="l">Attribution</div></div>
+          <div class="kpi"><div class="v grotesk">5.8K</div><div class="l">Leads (form)</div></div>
+          <div class="kpi"><div class="v grotesk">≈$0.02</div><div class="l">USD equiv. CPL</div></div>
+          <div class="kpi"><div class="v grotesk">166K</div><div class="l">Views</div></div>
         </div>
       </div>
       <div class="shot">
-        <img src="img6.png" alt="Ad results table showing 1.5M total leads across attribution windows">
-        <div class="cap mono">// Results breakdown by attribution window — full ownership of budget allocation, pacing and optimization.</div>
+        <img src="img1.png" alt="Meta lead generation overview showing 5.8K leads">
+        <div class="cap mono">// Dashboard billing currency is local; USD-equivalent CPL was about $0.02.</div>
       </div>
     </div>
 
-    <!-- Case 4 -->
+    <div class="case reveal">
+      <div class="case-top">
+        <div>
+          <div class="case-tag mono">TikTok · Testing Proof</div>
+          <h3 class="grotesk">TikTok campaign ranked top 30% while keeping LP views cheap</h3>
+        </div>
+        <div class="case-kpis">
+          <div class="kpi"><div class="v grotesk">$0.01-$0.02</div><div class="l">Cost / LP view</div></div>
+          <div class="kpi"><div class="v grotesk">Top 30%</div><div class="l">TikTok ranking</div></div>
+          <div class="kpi"><div class="v grotesk">2,001</div><div class="l">Button clicks</div></div>
+        </div>
+      </div>
+      <div class="shot">
+        <div class="two">
+          <img src="tt1.png" alt="TikTok promotion results with low cost per landing page view">
+          <img src="tt2.jpg" alt="TikTok promotion ranked top 30% with apply now clicks">
+        </div>
+        <div class="cap mono">// TikTok Ads proof: low-cost landing-page views and top-30% performance flag.</div>
+      </div>
+    </div>
+
     <div class="case reveal">
       <div class="case-top">
         <div>
           <div class="case-tag mono">Growth · Content Engine</div>
-          <h3 class="grotesk">Turning a cold account into an 11.9M-view machine</h3>
+          <h3 class="grotesk">Scaling content and paid distribution</h3>
         </div>
         <div class="case-kpis">
           <div class="kpi"><div class="v grotesk">16.3M</div><div class="l">Views (+665%)</div></div>
@@ -267,76 +321,150 @@
       </div>
       <div class="shot">
         <img src="img4.png" alt="Dashboard showing 16.3M views up 665%, 5.7M viewers, 178.6K interactions, 3.7M link clicks">
-        <div class="cap mono">// Views +665.8%, interactions +372.9%, link clicks +202.2% over the prior period.</div>
+        <div class="cap mono">// Views, interactions and clicks increased over the prior period.</div>
       </div>
     </div>
 
-    <!-- Case 5 -->
-    <div class="case reveal">
-      <div class="case-top">
-        <div>
-          <div class="case-tag mono">Repeatable · Multi-period</div>
-          <h3 class="grotesk">Consistent ₦29 CPL across separate campaign windows</h3>
-        </div>
-        <div class="case-kpis">
-          <div class="kpi"><div class="v grotesk">2.5K</div><div class="l">Leads</div></div>
-          <div class="kpi"><div class="v grotesk">₦29.02</div><div class="l">Cost / lead</div></div>
-          <div class="kpi"><div class="v grotesk">639K+</div><div class="l">Intake leads</div></div>
-        </div>
-      </div>
-      <div class="shot">
-        <div class="two">
-          <img src="img3.png" alt="Second campaign window showing 2.5K leads at 29.02 naira CPL">
-          <img src="img5.png" alt="Leads center showing 639K intake leads">
-        </div>
-        <div class="cap mono">// The ₦29 CPL wasn't a one-off — it repeated across flights. Right: 639K intake leads logged in Leads Center.</div>
-      </div>
-    </div>
   </section>
 
   <!-- SKILLS -->
   <section>
     <div class="sec-head">
       <span class="sec-idx mono">02</span>
-      <span class="sec-title grotesk">What I actually do</span>
+      <span class="sec-title grotesk">What I handle</span>
     </div>
     <div class="skills">
-      <div class="skill reveal"><h4>Campaign architecture</h4><p>Full build-out in Meta &amp; TikTok Ads Manager — objectives, audiences, ad sets and budgets structured to scale without breaking cost per result.</p></div>
-      <div class="skill reveal"><h4>Sales &amp; conversion campaigns</h4><p>I build campaigns engineered to drive purchases and conversions — funnel structure, conversion events and bidding set up to turn spend into revenue.</p></div>
-      <div class="skill reveal"><h4>Lead generation</h4><p>High-volume lead engines at rock-bottom cost. Proven CPLs at ₦29 / $0.02 across millions of leads.</p></div>
-      <div class="skill reveal"><h4>Audience &amp; targeting</h4><p>Cold, warm, lookalike and retargeting layers. I find the segment that converts, then pour budget into it.</p></div>
-      <div class="skill reveal"><h4>Creative direction</h4><p>Briefing scroll-stopping hooks and angles, then reading the data to decide what scales and what gets cut.</p></div>
-      <div class="skill reveal"><h4>Tracking &amp; optimization</h4><p>Pixel and conversion setup, clean attribution, daily A/B testing and budget reallocation — losers cut fast, winners scaled hard.</p></div>
+      <div class="skill reveal"><h4>Media buying strategy</h4><p>Campaign structure, budgets, objectives, bidding, audiences, and scaling decisions.</p></div>
+      <div class="skill reveal"><h4>Creative research</h4><p>I study active ads, competitor angles, market trends, and what is already getting attention.</p></div>
+      <div class="skill reveal"><h4>Hooks &amp; ad angles</h4><p>Scroll-stopping hooks, pain-point angles, UGC scripts, product ads, and offer testing.</p></div>
+      <div class="skill reveal"><h4>Lead &amp; sales campaigns</h4><p>Lead generation, conversions, sales, traffic, retargeting, and full-funnel campaign testing.</p></div>
+      <div class="skill reveal"><h4>Tracking &amp; reporting</h4><p>Pixel/events, UTMs, attribution checks, dashboard reads, and clear performance reporting.</p></div>
+      <div class="skill reveal"><h4>Account ownership</h4><p>Daily optimization, creative fatigue checks, budget moves, and fast decisions based on numbers.</p></div>
+    </div>
+  </section>
+
+
+  <!-- CREATIVE STRATEGY -->
+  <section>
+    <div class="sec-head">
+      <span class="sec-idx mono">03</span>
+      <span class="sec-title grotesk">Creative strategy samples</span>
+      <span class="sec-note">Product ads, UGC-style ads, and video creatives for testing.</span>
+    </div>
+
+    <div class="creative-grid">
+      <div class="creative-card reveal">
+        <img src="creative-premium-product.jpg" alt="Premium VitaFuel Daily Greens product ad concept with pouch, green drink and CTA">
+        <div class="body">
+          <div class="tag mono">Premium Product Ad</div>
+          <h4>Premium product ad</h4>
+          <p>Clean product shot with simple benefits and CTA.</p>
+        </div>
+      </div>
+      <div class="creative-card reveal">
+        <img src="creative-product-closeup.jpg" alt="Close-up VitaFuel Daily Greens product shot with supplement container and green powder">
+        <div class="body">
+          <div class="tag mono">Product Close-up</div>
+          <h4>Product close-up</h4>
+          <p>Focused product visual for retargeting and product pages.</p>
+        </div>
+      </div>
+      <div class="creative-card reveal">
+        <img src="creative-ugc-style.jpg" alt="UGC-style supplement ad concept showing person holding green drink">
+        <div class="body">
+          <div class="tag mono">UGC-Style Concept</div>
+          <h4>UGC-style image</h4>
+          <p>Lifestyle angle built for social feeds.</p>
+        </div>
+      </div>
+      <div class="creative-card reveal">
+        <img src="creative-product-grid.jpg" alt="Premium supplement product variation moodboard with pouch, container, sachets and box">
+        <div class="body">
+          <div class="tag mono">Variation System</div>
+          <h4>Product variations</h4>
+          <p>Multiple product angles from one brand direction.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-showcase">
+      <div class="video-card reveal">
+        <video src="video-supplement-product.mp4" poster="video-supplement-product-thumb.jpg" controls playsinline preload="metadata"></video>
+        <div class="body">
+          <div class="tag mono">Video Creative</div>
+          <h4>Supplement UGC ad</h4>
+          <p>Short UGC-style video with product use and CTA.</p>
+        </div>
+      </div>
+      <div class="video-card reveal">
+        <video src="video-flow.mp4" poster="video-flow-thumb.jpg" controls playsinline preload="metadata"></video>
+        <div class="body">
+          <div class="tag mono">Video Creative</div>
+          <h4>Product flow video</h4>
+          <p>Shows the product, routine, and usage steps.</p>
+        </div>
+      </div>
+      <div class="video-card reveal">
+        <video src="video-ugc-man-suitcase.mp4" poster="video-ugc-man-suitcase-thumb.jpg" controls playsinline preload="metadata"></video>
+        <div class="body">
+          <div class="tag mono">UGC-Style Video</div>
+          <h4>Talking-head UGC</h4>
+          <p>Person-led video for trust and hook testing.</p>
+        </div>
+      </div>
+      <div class="video-card reveal">
+        <video src="video-ugc-locker.mp4" poster="video-ugc-locker-thumb.jpg" controls playsinline preload="metadata"></video>
+        <div class="body">
+          <div class="tag mono">UGC-Style Video</div>
+          <h4>Lifestyle UGC</h4>
+          <p>Problem/solution concept for short-form ads.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="strategy-box reveal">
+      <div>
+        <h3>Creative testing process</h3>
+        <p>I do not throw random creatives at an account. I research what is working, build hooks around the offer, test one clear angle at a time, and read the numbers: hook rate, outbound CTR, CPC, LPV rate, conversion rate, CPL, and CPA. Winners get more variations. Losers get cut.</p>
+      </div>
+      <div class="strategy-list">
+        <div class="pill">Market research</div>
+        <div class="pill">Hook testing</div>
+        <div class="pill">UGC-style scripts</div>
+        <div class="pill">Product ad concepts</div>
+        <div class="pill">Offer-message match</div>
+        <div class="pill">CPL / CPA optimization</div>
+      </div>
     </div>
   </section>
 
   <!-- APPROACH -->
   <section>
     <div class="sec-head">
-      <span class="sec-idx mono">03</span>
-      <span class="sec-title grotesk">How a campaign runs with me</span>
+      <span class="sec-idx mono">04</span>
+      <span class="sec-title grotesk">How I run campaigns</span>
     </div>
     <div class="flow">
-      <div class="step reveal"><div class="num mono">01</div><h4 class="grotesk">Map the goal</h4><p>Leads, sales, or awareness — we define the one metric that matters before a dollar is spent.</p></div>
-      <div class="step reveal"><div class="num mono">02</div><h4 class="grotesk">Build &amp; launch</h4><p>Structured campaigns, targeted audiences, tracking wired up, creative briefed and live.</p></div>
-      <div class="step reveal"><div class="num mono">03</div><h4 class="grotesk">Test &amp; read</h4><p>Multiple angles in market. I let the data — not opinions — decide what survives.</p></div>
-      <div class="step reveal"><div class="num mono">04</div><h4 class="grotesk">Scale the winner</h4><p>Push budget into what converts, drive CPL down, and report it back clearly.</p></div>
+      <div class="step reveal"><div class="num mono">01</div><h4 class="grotesk">Research first</h4><p>Study the offer, competitors, winning ads, hooks, and funnel before launch.</p></div>
+      <div class="step reveal"><div class="num mono">02</div><h4 class="grotesk">Build properly</h4><p>Set campaigns, tracking, creatives, UTMs, budgets, and launch structure.</p></div>
+      <div class="step reveal"><div class="num mono">03</div><h4 class="grotesk">Test fast</h4><p>Test hooks, angles, copy, audiences, and offers without guessing.</p></div>
+      <div class="step reveal"><div class="num mono">04</div><h4 class="grotesk">Scale winners</h4><p>Move budget to what works, refresh creatives, and keep reporting clear.</p></div>
     </div>
   </section>
 
   <!-- CTA -->
   <section class="cta">
-    <h2 class="grotesk reveal">Hand me the budget. <em>I'll bring back the numbers.</em></h2>
-    <p class="reveal">Open to remote roles &amp; contracts — worldwide. Meta &amp; TikTok media buying.</p>
+    <h2 class="grotesk reveal">Need more leads, sales, or scale? <em>Email me.</em></h2>
+    <p class="reveal">Available for remote roles, freelance campaigns, audits, and performance creative strategy.</p>
     <div class="btns reveal">
-      <a class="btn btn-pri" href="mailto:adauda2021@gmail.com">Hire me →</a>
-      <a class="btn btn-sec" href="#">Download CV</a>
+      <a class="btn btn-pri" href="mailto:adauda2021@gmail.com?subject=Media%20Buying%20Inquiry">Email me</a>
+      <a class="btn btn-sec" href="Sadeeq-MediaBuyer-Resume.pdf" download>Download CV</a>
     </div>
   </section>
 
   <footer>
-    <span>SADEEQ — Performance Media Buyer</span>
-    <span>Meta · Instagram · TikTok &nbsp;//&nbsp; 2026</span>
+    <span>SADEEQ - Performance Media Buyer & Creative Strategist</span>
+    <span>Paid Ads · Hooks · Creative Testing · Leads · Sales · Scale &nbsp;//&nbsp; 2026</span>
   </footer>
 </div>
 
